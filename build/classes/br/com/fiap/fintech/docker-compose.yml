@@ -1,0 +1,11 @@
+version: '3'
+services:
+  oracle-xe:
+    image: oracleinanutshell/oracle-xe-11g
+    ports:
+      - "49161:1521"
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_DISABLE_APEX=true
+      - ORACLE_DISABLE_DEFAULT=true
+      - ORACLE_PWD=oracle
